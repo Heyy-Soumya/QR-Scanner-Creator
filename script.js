@@ -21,7 +21,7 @@ domReady(function () {
     }
     // If a QR code is found
     function onScanSuccess(decodeText, decodeResult) {
-        alert("Your QR code is: " + decodeText + "\nResult: " + JSON.stringify(decodeResult));
+        alert("Your QR code is: " + decodeText );
 
         if (isValidUrl(decodeText)) {
             // Redirect to the URL
